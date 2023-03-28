@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-body: rgb(0, 0, 0);
+  --color-text: #FFFFFF;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  background: var(--bg-body);
+  color: var(--color-text);
+}
+
+.page {
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
