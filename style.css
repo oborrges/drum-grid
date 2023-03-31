@@ -6,25 +6,61 @@
 
 :root {
   font-size: 62.5%;
-  --bg-body: rgb(0, 0, 0);
-  --color-text: #FFFFFF;
+
+  --hue: 16;
+  --bg-body: hsl(var(--hue), 0%, 0%);
+  --fc-first: hsl(var(--hue), 0%, 100%);
+  --fc-secondary: hsl(var(--hue), 100%, 50%);
 }
 
 body {
   font-family: 'Epilogue', sans-serif;
   background: var(--bg-body);
-  color: var(--color-text);
+  color: var(--fc-first);
 }
 
 .page {
   max-width: 33rem;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin:0 auto ;
 
 }
 
+img {
+  width:100%;
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+
+  letter-spacing: 5px;
+  color: var(--fc-secondary);
+
+  padding: 5.6rem 0 1.7rem;
+}
+
+header h1{
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+
+  padding-bottom: 1.7rem;
+}
+
+.card {
+  position: relative;
+}
+
 .card img {
-  width: 100%;
-  height: auto;
+  height: 41.6rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
 }
