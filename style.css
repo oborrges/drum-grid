@@ -19,6 +19,11 @@ body {
   color: var(--fc-first);
 }
 
+main {
+  display: grid;
+  gap: 3.2rem;
+}
+
 .page {
   max-width: 33rem;
   display: flex;
@@ -51,12 +56,14 @@ header h1{
 
 .card {
   position: relative;
-  max-width: fit-content;
+  max-width: 33rem;
 }
 
 .card img {
   height: 41.6rem;
   object-fit: cover;
+
+  border-radius: 6px;
 }
 
 h2 {
