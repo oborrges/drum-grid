@@ -110,3 +110,28 @@ h2 {
 .card h2 span a:hover {
   background: var(--bg-body);
 }
+
+header {
+  animation: todown 0.8s forwards;
+}
+
+main {
+  animation: totop 0.8s;
+}
+
+@keyframes todown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes totop {
+
+}
