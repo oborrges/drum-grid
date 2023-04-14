@@ -22,7 +22,10 @@ body {
 main {
   display: grid;
   gap: 3.2rem;
+
+  animation: totop 0.8s reverse
 }
+
 
 .page {
   max-width: 33rem;
@@ -33,6 +36,10 @@ main {
 
 img {
   width:100%;
+}
+
+header {
+  animation: todown 0.8s forwards;
 }
 
 header p {
@@ -111,14 +118,6 @@ h2 {
   background: var(--bg-body);
 }
 
-header {
-  animation: todown 0.8s forwards;
-}
-
-main {
-  animation: totop 0.8s;
-}
-
 @keyframes todown {
   0% {
     opacity: 0;
@@ -132,6 +131,12 @@ main {
 
 }
 
+/*keyframes main*/
+
 @keyframes totop {
+100% {
+  opacity: 0;
+  transform: translateY(15px);
+}
 
 }
