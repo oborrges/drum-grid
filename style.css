@@ -19,16 +19,18 @@ body {
   color: var(--fc-first);
 }
 
-main {
-  display: grid;
-  gap: 3.2rem;
-}
+
 
 .page {
-  max-width: 33rem;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   margin:0 auto ;
+}
+
+main {
+  display: grid;
+  gap: 3.0rem;
 }
 
 img {
@@ -64,6 +66,13 @@ header h1{
   object-fit: cover;
 
   border-radius: 6px;
+
+  transition: all 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  opacity: 0.4;
 }
 
 h2 {
@@ -98,8 +107,21 @@ h2 {
   line-height: 3.2rem;
   text-decoration: none;
   color: var(--fc-first);
+
+  transition: all 0.3s;
 }
 
 .card h2 span a:hover {
   background: var(--bg-body);
+  transform: scale(1.2);
+}
+
+@keyframes fromTop {
+  0%{
+    transform: translateY(-20px);
+  }
+
+  100% {
+
+  }
 }
