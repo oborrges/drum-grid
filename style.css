@@ -19,22 +19,15 @@ body {
   color: var(--fc-first);
 }
 
-
-
 .page {
-  max-width: 30rem;
+  max-width: 28rem;
   display: flex;
   flex-direction: column;
   margin:0 auto ;
 }
 
-main {
-  display: grid;
-  gap: 3.0rem;
-}
-
-img {
-  width:100%;
+header {
+  animation: fromTop 700ms 350ms forwards;
 }
 
 header p {
@@ -56,9 +49,20 @@ header h1{
   padding-bottom: 1.7rem;
 }
 
+main {
+  display: grid;
+  gap: 3.0rem;
+
+  animation: fromBotton 700ms 350ms;
+}
+
 .card {
   position: relative;
-  max-width: 33rem;
+  max-width: 28rem;
+}
+
+img {
+  width:100%;
 }
 
 .card img {
@@ -116,12 +120,27 @@ h2 {
   transform: scale(1.2);
 }
 
+
 @keyframes fromTop {
   0%{
     transform: translateY(-20px);
+    opacity: 0;
   }
 
   100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
+@keyframes fromBotton {
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
