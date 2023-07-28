@@ -33,6 +33,8 @@ body {
 
 header {
   animation: fromTop 700ms 350ms forwards;
+
+  text-align: center;
 }
 
 header p {
@@ -60,7 +62,6 @@ main {
   display: grid;
   gap: 3.0rem;
   
-
   animation: fromBotton 700ms 350ms;
 
   margin-bottom: 3rem;
@@ -137,19 +138,40 @@ h2 {
   }
 
   .page {
-    max-width: 100rem;
+    min-width: 117rem;
     padding: 3.2rem 6.5rem;
   }
-
   main {
-    max-width: 110rem;
+    min-width: 117rem;
+    grid-template-columns: 1fr 1fr;
   }
-
-  header p, h1 {
-    text-align: center;
-  }
+  
 }
 
+@media (min-width: 930px) {
+
+  main {
+    grid-template-areas: "A B B"
+    "C C D";
+
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+}
 
 @keyframes fromTop {
   0%{
