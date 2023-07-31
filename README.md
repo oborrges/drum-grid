@@ -12,7 +12,7 @@
   <img alt="Projeto DevLinks" src=".github/preview-1.jpg" width="100%">
 </p>
 
-## PROJETO EM PRODUÇÃO 🚧 ##
+### PROJETO EM PRODUÇÃO 🚧 ##
 
 Esse é meu primeiro projeto pensando em "Responsividade".
 
@@ -28,7 +28,7 @@ ________________________________________________________________________________
 
 - Esse projeto tratasse de um fragmento de um site, aonde o usuário pode ter acesso aos níveis das aulas. 
 
-# IMPLEMENTAÇÕES FUTURAS 
+### IMPLEMENTAÇÕES FUTURAS 
 
 - Informações do conteúdo de cada módulo.
 
